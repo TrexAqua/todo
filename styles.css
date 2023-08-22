@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(27,56,125);
+    background: radial-gradient(circle, rgba(27,56,125,1) 0%, rgba(121,83,135,1) 100%);
+    height: 100vh;
+    width: 100vw;
+}
+#todo-card{
+    background-color: white;
+    margin-top: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    align-items: left;
+    border-radius: 20px;
+}
+#todo-title{
+    font-size: 23px;
+    font-weight: bolder;
+    color: rgb(16, 16, 95);
+    margin: 20px;
+    margin-bottom: 10px;
+}
+#todo-input-container{
+    background-color: rgb(209, 208, 208);
+    border-radius: 30px;
+    align-items: center;
+    width: 450px;
+    display: flex;
+    margin-left: 20px;
+}
+#todo-input{
+    width: 350px;
+    height: 50px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: transparent;
+    color: black;
+}
+#add-todo{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: #ff643c;
+    color: white;
+    cursor: pointer;
+}
+#todos-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin-top: 20px;
+}
+.todo{
+    display: flex;
+    width: 75%;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+.todo-info{
+    width: 75%;
+    font-size: 18px;
+    font-weight: 500;
+}
+.todo-done ,.delete{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.checked h3{
+    text-decoration: line-through;
+}
